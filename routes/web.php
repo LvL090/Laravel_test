@@ -16,6 +16,6 @@ use App\Http\Controllers\GamesController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/games', [GamesController::class, 'index']);
+Route::get('/index', [GamesController::class, 'index']);
 Route::get('/games/create', [GamesController::class, 'create']);
 Route::get('/games/{name_game}/{categoria?}', [GamesController::class, 'help']);
