@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    @vite('resources/css/app.css')
     <title>Laravel prueba</title>
 
     <!-- Fonts -->
@@ -467,7 +467,7 @@
                             </div>
                         </div>
                         <div class="flex items-center">
-                            <div class="ml-8">
+                            <div class="">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-lm">
                                     Hacer click en el botón para acceder al panel
                                 </div>
@@ -475,7 +475,10 @@
                         </div>
                         <div class="ml-16 ">
                             <a href='index'>
-                                <button type="button" class="button button1 button1:hover">Acceder</button>
+                                <button type="button"
+                                    class="mt-2 ml-4 bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-4 px-6 border border-green-500 hover:border-transparent rounded">
+                                    Acceder
+                                </button>
                             </a>
                         </div>
                     </div>
