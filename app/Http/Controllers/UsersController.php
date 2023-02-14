@@ -22,13 +22,5 @@ class UsersController extends Controller
         return view('create');
     }
 
-    public function help($name_game, $categoria = null)
-    {
-        $date = Now();
-        return view('show', [
-            'nameVideogame' => $name_game,
-            'categoryGame' => $categoria,
-            'fecha' => $date
-        ]);
-    }
+ 
 }

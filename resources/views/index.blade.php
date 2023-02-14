@@ -66,16 +66,18 @@
                                     </td>
                                     <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
                                         @if ($user->active)
-                                            <span class="bg-green-500 font-semibold">Activo</span>
+                                            <span class="bg-green-500  font-semibold">Activo</span>
                                         @else
                                             <span class="bg-red-500 font-semibold">Inactivo</span>
                                         @endif
                                     </td>
                                     <td class="text-sm text-gray-900 font-medium px-6 py-6 whitespace-nowrap">
-                                        <button
-                                            class="  bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-6 border border-green-500 hover:border-transparent rounded">
-                                            Editar
-                                        </button>
+                                        <a href='edit'>
+                                            <button
+                                                class="  bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-6 border border-green-500 hover:border-transparent rounded">
+                                                Editar
+                                            </button>
+                                        </a>
                                         <button
                                             class="bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded">
                                             Eliminar
