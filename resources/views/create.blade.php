@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <h1>Formulario creación de videojuegos</h1>
+    <h1>Formulario de alta nueva</h1>
     <form action="">
-        <input type="text" placeholder="Nombre del videojuego" name="name_game">
+        <input type="text" placeholder="Nombre de la persona" name="name_game">
         <select name="categoria" id="">
             <option value="deportes">Deportes</option>
             <option value="accion">Acción</option>

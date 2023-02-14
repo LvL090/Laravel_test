@@ -3,16 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
-
-class GamesController extends Controller
+class UsersController extends Controller
 {
     //
     public function index()
     {
+        $users = User::all();
+        //dd($users);
 
-        $videogames = array();
-        return view('index',['games' =>$videogames]);
+        return view('index',['users' =>$users]);
     }
 
     public function create()

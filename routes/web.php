@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\GamesController;
+//use App\Http\Controllers\GamesController;
+use App\Http\Controllers\UsersController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +18,6 @@ use App\Http\Controllers\GamesController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/index', [GamesController::class, 'index']);
-Route::get('/games/create', [GamesController::class, 'create']);
-Route::get('/games/{name_game}/{categoria?}', [GamesController::class, 'help']);
+Route::get('/index', [UsersController::class, 'index']);
+Route::get('/users/create', [UsersController::class, 'create']);
+//Route::get('/games/{name_game}/{categoria?}', [UsersController::class, 'help']);
