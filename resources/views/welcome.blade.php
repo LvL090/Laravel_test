@@ -457,12 +457,12 @@
                 </svg>
             </div>
 
-            <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow  sm:rounded-lg ">
+            <div class="mt-4 bg-white dark:bg-gray-800 overflow-hidden shadow  sm:rounded-lg ">
                 <div>
                     <div class="p-6 ">
                         <div class="flex items-center">
 
-                            <div class="ml-16 text-lg leading-7 font-semibold">
+                            <div class="ml-16  text-lg leading-7 font-semibold">
                                 <div class="underline text-gray-900 dark:text-white">Panel de control</div>
                             </div>
                         </div>
@@ -476,7 +476,7 @@
                         <div class="ml-16 ">
                             <a href='index'>
                                 <button type="button"
-                                    class="mt-2 ml-4 bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-4 px-6 border border-green-500 hover:border-transparent rounded">
+                                    class="mt-2  bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-4 px-8 border border-green-500 hover:border-transparent rounded">
                                     Acceder
                                 </button>
                             </a>

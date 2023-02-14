@@ -21,3 +21,6 @@ Route::get('/', function () {
 Route::get('/index', [UsersController::class, 'index']);
 Route::get('/users/create', [UsersController::class, 'create']);
 //Route::get('/games/{name_game}/{categoria?}', [UsersController::class, 'help']);
+Route::get('/table', function () {
+    return view('table');
+});
