@@ -9,8 +9,14 @@
     <title>Document</title>
 </head>
 
-<body class="bg-gray-900 flex justify-center">
+<body class="bg-gray-600 flex justify-center">
+
     <div class="flex flex-col">
+        <a href='create'>
+            <button class="bg-blue-400 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-2 w-full">
+                Dar de alta
+            </button>
+        </a>
         <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div class="py-4 inline-block min-w-full sm:px-6 lg:px-8">
                 <div class="overflow-hidden">
@@ -39,7 +45,6 @@
                                 <th scope="col" class="text-sm font-medium text-white px-6 py-4">
                                     Acciones
                                 </th>
-
                             </tr>
                         </thead class="border-b">
                         <tbody>

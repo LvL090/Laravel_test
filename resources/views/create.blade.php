@@ -9,7 +9,7 @@
     <title>Create</title>
 </head>
 
-<body class="bg-gray-700 ">
+<body class="bg-gray-600 ">
     <div class="w-full overflow-scroll  h-screen  p-4 flex items-center justify-center">
         <div class="bg-white py-6 px-10 sm:max-w-md w-full ">
             <div class="sm:text-3xl text-2xl font-semibold text-center text-sky-600  mb-12">
@@ -29,7 +29,7 @@
                 <div class="flex justify-center my-6">
                     <button
                         class=" rounded-full  p-3 w-full sm:w-56   bg-gradient-to-r from-sky-600  to-teal-300 text-white text-lg font-semibold ">
-                        Dar de Alta
+                      Enviar
                     </button>
                 </div>
                 <div class="flex justify-center ">
