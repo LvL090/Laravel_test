@@ -9,16 +9,36 @@
     <title>Create</title>
 </head>
 
-<body>
-    <h1>Formulario de alta nueva</h1>
-    <form action="">
-        <input type="text" placeholder="Nombre de la persona" name="name_game">
-        <select name="categoria" id="">
-            <option value="deportes">Deportes</option>
-            <option value="accion">Acción</option>
-        </select>
-        <input type="submit" value="Enviar">
-    </form>
+<body class="bg-gray-700 ">
+    <div class="w-full overflow-scroll  h-screen  p-4 flex items-center justify-center">
+        <div class="bg-white py-6 px-10 sm:max-w-md w-full ">
+            <div class="sm:text-3xl text-2xl font-semibold text-center text-sky-600  mb-12">
+                Registro de alta nueva
+            </div>
+            <div>
+                <div>
+                    <input type="text"
+                        class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500"
+                        placeholder="Nombre " />
+                </div>
+                <div>
+                    <input type="text"
+                        class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500 my-8"
+                        placeholder="Apellidos " />
+                </div>
+                <div class="flex justify-center my-6">
+                    <button
+                        class=" rounded-full  p-3 w-full sm:w-56   bg-gradient-to-r from-sky-600  to-teal-300 text-white text-lg font-semibold ">
+                        Dar de Alta
+                    </button>
+                </div>
+                <div class="flex justify-center ">
+                    <p class="text-gray-500">Haz click aquí para </p>
+                    <a href='index' class="text-red-600 pl-2"> Cancelar</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
