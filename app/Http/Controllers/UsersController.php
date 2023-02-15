@@ -10,7 +10,7 @@ class UsersController extends Controller
     //
     public function index()
     {
-        $users = User::all();
+        $users = User::orderBy('id','desc')->get();
 
 
         return view('index', ['users' => $users]);
@@ -34,5 +34,28 @@ class UsersController extends Controller
         $user->save();
 
         return redirect()->route('check_create');
+    }
+
+    public function viewEdit ($user_id){
+
+        $user = User::find($user_id);
+
+        $users = User::all();
+
+
+        return view('edit', ['user' => $user]);
+
+    }
+
+    public function updateUser(Request $request)
+    {
+
+        $user = User::find($request->id);
+        $user->name = $request->name;
+        $user->lastname = $request->lastname;
+        $user->active = 1;
+        $user->save();
+
+        return redirect()->route('check_edit');
     }
 }

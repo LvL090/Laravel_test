@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Create</title>
+    <title>Creación</title>
 </head>
 
 <body class="bg-gray-600 ">
-    <form action="{{ route('createUser') }}" method="POST">
+    <form action="{{ route('storeUser') }}" method="POST">
         @csrf
         <div class="w-full overflow-scroll  h-screen  p-4 flex items-center justify-center">
             <div class="bg-white py-6 px-10 sm:max-w-md w-full ">
