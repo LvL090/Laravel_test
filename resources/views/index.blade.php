@@ -12,11 +12,11 @@
 <body class="bg-gray-600 flex justify-center">
 
     <div class="flex flex-col">
-        <a href='create'>
-            <button class="bg-blue-400 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-2 w-full">
-                Dar de alta
-            </button>
-        </a>
+        <a href='/create'>
+    <button class="bg-blue-400 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-2 w-full">
+        Dar de alta
+    </button>
+</a>
         <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div class="py-4 inline-block min-w-full sm:px-6 lg:px-8">
                 <div class="overflow-hidden">
@@ -78,7 +78,7 @@
                                                 Editar
                                             </button>
                                         </a>
-                                        <a href='check_remove'>
+                                        <a href='/check_remove'>
                                             <button
                                                 class="bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded">
                                                 Eliminar

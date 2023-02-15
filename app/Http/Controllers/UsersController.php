@@ -10,7 +10,7 @@ class UsersController extends Controller
     //
     public function index()
     {
-        $users = User::orderBy('id','desc')->get();
+        $users = User::orderBy('id', 'desc')->get();
 
 
         return view('index', ['users' => $users]);
@@ -36,7 +36,8 @@ class UsersController extends Controller
         return redirect()->route('check_create');
     }
 
-    public function viewEdit ($user_id){
+    public function viewEdit($user_id)
+    {
 
         $user = User::find($user_id);
 
@@ -44,18 +45,24 @@ class UsersController extends Controller
 
 
         return view('edit', ['user' => $user]);
-
     }
 
     public function updateUser(Request $request)
     {
-
         $user = User::find($request->id);
+        if (!$user) {
+            return redirect()->route('check_edit')->with('error', 'User not found');
+        }
+        if (!$user->active) {
+            return redirect()->route('check_edit')->with('error', 'User is not active');
+        }
         $user->name = $request->name;
         $user->lastname = $request->lastname;
-        $user->active = 1;
         $user->save();
-
-        return redirect()->route('check_edit');
+        return redirect()->back()
+            ->with('success', 'User updated successfully');
     }
+
+
+
 }
