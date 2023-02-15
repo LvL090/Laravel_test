@@ -13,14 +13,26 @@ class UsersController extends Controller
         $users = User::all();
         //dd($users);
 
-        return view('index',['users' =>$users]);
+        return view('index', ['users' => $users]);
     }
 
     public function create()
     {
+        $users = User::all();
+        //dd($users);
 
-        return view('create');
+        return view('create', ['users' => $users]);
     }
 
- 
+    public function storeUser(Request $request)
+    {
+
+        $user = new User;
+        $user->name = $request->name;
+        $user->lastname = $request->lastname;
+        $user->active = 1;
+        $user->save();
+
+        return redirect()->route('index');
+    }
 }

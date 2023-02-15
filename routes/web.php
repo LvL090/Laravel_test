@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-//use App\Http\Controllers\GamesController;
 use App\Http\Controllers\UsersController;
 
 /*
@@ -18,8 +17,11 @@ use App\Http\Controllers\UsersController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/index', [UsersController::class, 'index']);
+Route::get('/index', [UsersController::class, 'index'])->name('index');
 Route::get('/create', [UsersController::class, 'create']);
 Route::get('/edit', function () {
     return view('edit');
 });
+
+Route::post('/create/storeUser', [UsersController::class, 'storeUser']) ->name('createUser');
+
