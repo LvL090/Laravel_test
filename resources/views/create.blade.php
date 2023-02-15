@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -22,11 +22,17 @@
                         <input type="text" name="name"
                             class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500"
                             placeholder="Nombre " />
+                        @error('name')
+                            {{ $message }}
+                        @enderror
                     </div>
                     <div>
                         <input type="text" name="lastname"
                             class="focus:outline-none border-b w-full pb-2 border-sky-400 placeholder-gray-500 my-8"
                             placeholder="Apellidos " />
+                        @error('lastname')
+                            {{ $message }}
+                        @enderror
                     </div>
                     <div class="flex justify-center my-6">
                         <button type="submit"

@@ -26,6 +26,10 @@ class UsersController extends Controller
 
     public function storeUser(Request $request)
     {
+        $request->validate([
+            'name'=>'required',
+            'lastname' =>'required'
+        ]);
 
         $user = new User;
         $user->name = $request->name;
@@ -62,7 +66,4 @@ class UsersController extends Controller
         return redirect()->back()
             ->with('success', 'User updated successfully');
     }
-
-
-
 }
