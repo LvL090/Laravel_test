@@ -37,7 +37,7 @@
                     </div>
                     <div class="flex justify-center ">
                         <p class="text-gray-500">Haz click aquí para </p>
-                        <a href='index' class="text-red-600 pl-2"> Cancelar</a>
+                        <a href="{{ route('index', $user->id) }}" class="text-red-600 pl-2"> Cancelar</a>
                     </div>
                 </div>
             </div>
