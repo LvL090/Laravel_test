@@ -11,7 +11,7 @@ class UsersController extends Controller
     public function index()
     {
         $users = User::all();
-        //dd($users);
+
 
         return view('index', ['users' => $users]);
     }
@@ -19,7 +19,7 @@ class UsersController extends Controller
     public function create()
     {
         $users = User::all();
-        //dd($users);
+
 
         return view('create', ['users' => $users]);
     }
@@ -33,6 +33,6 @@ class UsersController extends Controller
         $user->active = 1;
         $user->save();
 
-        return redirect()->route('index');
+        return redirect()->route('check_create');
     }
 }

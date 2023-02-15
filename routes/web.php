@@ -22,6 +22,8 @@ Route::get('/create', [UsersController::class, 'create']);
 Route::get('/edit', function () {
     return view('edit');
 });
+Route::get('/check_create', function () {
+    return view('check_create');
+})->name('check_create');
 
-Route::post('/create/storeUser', [UsersController::class, 'storeUser']) ->name('createUser');
-
+Route::post('/create/storeUser', [UsersController::class, 'storeUser'])->name('createUser');
