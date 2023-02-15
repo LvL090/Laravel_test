@@ -23,6 +23,8 @@ Route::get('/create', [UsersController::class, 'create']);
 
 Route::get('/edit/{user_id}', [UsersController::class, 'viewEdit'])->name('viewEdit');
 
+Route::get('/delete/{user_id}', [UsersController::class, 'delete'])->name('deleteUser');
+
 Route::get('/check_create', function () {
     return view('check_create');
 })->name('check_create');
@@ -31,11 +33,13 @@ Route::get('/check_edit', function () {
     return view('check_edit');
 })->name('check_edit');
 
-Route::get('/check_remove', function () {
-    return view('check_remove');
-})->name('check_remove');
+Route::get('/check_delete', function () {
+    return view('check_delete');
+})->name('check_delete');
 
 
 
 Route::post('/create/storeUser', [UsersController::class, 'storeUser'])->name('storeUser');
 Route::post('/edit/updateUser', [UsersController::class, 'updateUser'])->name('updateUser');
+
+
