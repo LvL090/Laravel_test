@@ -31,12 +31,7 @@ class UsersController extends Controller
             'lastname' =>'required'
         ]);
 
-        // $user = new User;
-        // $user->name = $request->name;
-        // $user->lastname = $request->lastname;
-        // $user->active = 1;
-        // $user->save();
-
+ 
         User::create($request->all());
 
         return redirect()->route('check_create');
@@ -55,18 +50,10 @@ class UsersController extends Controller
 
     public function updateUser(Request $request)
     {
-        // $user = User::find($request->id);
-        // if (!$user) {
-        //     return redirect()->route('check_edit')->with('error', 'User not found');
-        // }
-        // if (!$user->active) {
-        //     return redirect()->route('check_edit')->with('error', 'User is not active');
-        // }
-        // $user->name = $request->name;
-        // $user->lastname = $request->lastname;
-        // $user->save();
-
-        User::find($request->all());
+        $user = User::find($request->user_id);
+        $user->name = $request->name;
+        $user->lastname = $request->lastname;
+        $user->save();
         return redirect()->route('check_edit');
     }
 
